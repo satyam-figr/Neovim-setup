@@ -13,7 +13,11 @@ vim.opt.rtp:prepend(lazypath)
 
 -- require("satyamx55.plugins.themes")
 
-require("lazy").setup({ { import = "satyamx55.plugins" }, { import = "satyamx55.plugins.lsp" } }, {
+require("lazy").setup({
+  { import = "satyamx55.plugins" },
+  { import = "satyamx55.plugins.lsp" },
+  { import = "satyamx55.plugins.themes.catppuccin" },
+}, {
   checker = {
     enabled = true,
     notify = false,
